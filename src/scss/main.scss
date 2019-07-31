@@ -1,9 +1,10 @@
 @import "_normalize";
 @import "_variables";
-
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap&subset=latin-ext');
 
 html {
   box-sizing: border-box;
+  background: $white;
 }
 
 *, *:before, *:after {
@@ -11,6 +12,17 @@ html {
 }
 
 body {
-  color: $yellow;
-  background: $violet;
+  color: $black;
+  background: $white;
+  font-family: 'poppins';
+  font-weight: 400;
+}
+
+.main {
+  max-width: 1000px;
+
+}
+
+.about {
+  height: 100vh;
 }
