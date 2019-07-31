@@ -1,1 +1,0 @@
-# thelukkz.github.io
