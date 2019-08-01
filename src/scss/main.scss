@@ -94,3 +94,117 @@ body {
     }
   }
 }
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  font-size: .9rem;
+
+  &__list {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    list-style: none;
+    padding-top: 1rem;
+    line-height: 1.5rem;
+
+    @media (max-width: $min-width-mobile) {
+      grid-template-columns: 100%;
+      padding-top: 0;
+    }
+
+    &--skills>li {
+      &::before {
+        content: url("../assets/img/check-green.svg");
+        position: relative;
+        vertical-align: -.2rem;
+        margin-right: .2rem;
+      }
+    }
+
+    &--softskills {
+      grid-template-columns: 100%;
+
+      &>li {
+        &::before {
+          content: url("../assets/img/check-purple.svg");
+          position: relative;
+          vertical-align: -.2rem;
+          margin-right: .2rem;
+        }
+      }
+    }
+
+    &--want-lern {
+      grid-template-columns: 100%;
+
+      &>li {
+        &::before {
+          content: url("../assets/img/check-blue.svg");
+          position: relative;
+          vertical-align: -.2rem;
+          margin-right: .2rem;
+        }
+      }
+    }
+  }
+
+  &__knowledge {
+    display: flex;
+   
+    @media (max-width: $min-width-desktop) {
+      flex-direction: column;
+    }
+  }
+
+  &__softskills {
+    display: flex;
+
+    @media (max-width: $min-width-desktop) {
+      flex-direction: column;
+    }
+  }
+
+  &__subtitle {
+    width: 30%;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    &--green::before {
+      content: url("../assets/img/decoline-green.svg");
+      display: block;
+    }
+
+    &--purple::before {
+      content: url("../assets/img/decoline-purple.svg");
+      display: block;
+    }
+
+    &--blue::before {
+      content: url("../assets/img/decoline-blue.svg");
+      display: block;
+    }
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: thin solid $grey;
+  }
+
+  &__want-lern {
+    display: flex;
+
+    @media (max-width: $min-width-desktop) {
+      flex-direction: column;
+    }
+  }
+}
+
+.skills-list {
+  &__element {
+  
+
+  }
+}
