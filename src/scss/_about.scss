@@ -1,28 +1,30 @@
 @import "_variables";
 
 .about {
+    width: 100%;
+    max-width: $max-width-desktop;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    
-    padding-top: 6rem;
-    max-width: $min-width-desktop;
-    padding: 2rem 1rem;
+    margin: 0 auto;
+
+    padding-top: 112px;;
+    max-width: $max-width-desktop;
   
     @media (max-width: $min-width-desktop) {
-      padding: 1rem;
+      padding-top: 1rem;
     }
   
     &__description {
-      width: 75%;
+      max-width: $max-width-container;
       font-size: 2rem;
       font-weight: 600;
-  
+      line-height: 3rem;
       @media (max-width: $min-width-mobile) {
         font-size: 1.4rem;
-        width: 100%;
+        //width: 100%;
       }
     }
   
@@ -34,12 +36,15 @@
       &--email {
         text-decoration: none;
         font-size: 1.1rem;
+        padding-bottom: 8px;
+        border-bottom: 2px solid $blue;
       }
     }
   
     &__navigation {
-      max-width: $min-width-desktop;
+      max-width: $max-width-container;
       font-size: 1.1rem;
+      line-height: 2rem;
       margin-bottom: 48px;
     }
   
@@ -55,6 +60,35 @@
       @media (max-width: $min-width-desktop) {
         flex-direction: column;
         align-items: flex-start;
+      }
+    }
+  }
+
+  .user {
+    display: flex;
+    flex-direction: row;
+
+    @media (max-width: $min-width-desktop) {
+        flex-direction: column;
+    }
+
+    &__avatar {
+      border-radius: 50%;
+      width: 110px;
+      height: 110px;
+      padding: 0.4rem;
+      border-color: $grey;
+      border-width: .5rem;
+      border-style: solid;
+    }
+  
+    &__name {
+      padding-left: 16px;
+      font-weight: 600;
+      font-size: 4rem;
+      margin: 0;
+      @media (max-width: $min-width-desktop) {
+        padding: 0;
       }
     }
   }
