@@ -1,3 +1,4 @@
+@import "_about";
 @import "_normalize";
 @import "_variables";
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap&subset=latin-ext');
@@ -17,10 +18,8 @@ html {
   font-family: 'poppins';
   font-weight: 400;
   font-size: 16px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: .6rem solid $darkblue;
+
+  //border: .6rem solid $darkblue;
 
   @media (max-width: $min-width-desktop) {
     border: 0;
@@ -28,69 +27,14 @@ html {
 }
 
 .main {
-  //padding: 2rem 1rem;
+  padding: 2rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.about {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  
-  padding-top: 6rem;
   max-width: $min-width-desktop;
-  padding: 2rem 1rem;
-
-  @media (max-width: $min-width-desktop) {
-    padding: 1rem;
-  }
-
-  &__description {
-    width: 75%;
-    font-size: 2rem;
-    font-weight: 600;
-
-    @media (max-width: $min-width-mobile) {
-      font-size: 1.4rem;
-      width: 100%;
-    }
-  }
-
-  &__link {
-    text-decoration: underline;
-    color: $blue;
-    font-weight: 600;
-
-    &--email {
-      text-decoration: none;
-      font-size: 1.1rem;
-    }
-  }
-
-  &__navigation {
-    max-width: $min-width-desktop;
-    font-size: 1.1rem;
-    margin-bottom: 48px;
-  }
-
-  &__user {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: baseline;
-    padding-bottom: 32px;
-    border-bottom: thin solid $grey;
-
-    @media (max-width: $min-width-desktop) {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  }
 }
+
+
 
 .contact {
   width: 100%;
@@ -188,11 +132,12 @@ html {
 
 .container--grey {
   background: $lightgrey;
-  width: 100vw;
-  border-left: .6rem solid $darkblue;
-  border-right: .6rem solid $darkblue;
+  width: 100vh;
+  //border-left: .6rem solid $darkblue;
+  //border-right: .6rem solid $darkblue;
   display: flex;
   justify-content: center;
+
 
   @media (max-width: $min-width-desktop) {
     border: 0;
