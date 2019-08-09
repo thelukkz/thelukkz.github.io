@@ -18,6 +18,7 @@
     }
   
     &__description {
+      padding: 0 1rem;
       max-width: $max-width-container;
       font-size: 2rem;
       font-weight: 600;
@@ -32,8 +33,9 @@
       text-decoration: underline;
       color: $blue;
       font-weight: 600;
-  
+
       &--email {
+          margin-left: 1rem;
         text-decoration: none;
         font-size: 1.1rem;
         padding-bottom: 8px;
@@ -46,6 +48,7 @@
       font-size: 1.1rem;
       line-height: 2rem;
       margin-bottom: 48px;
+      padding: 0 1rem;
     }
   
     &__user {
@@ -67,6 +70,9 @@
   .user {
     display: flex;
     flex-direction: row;
+    padding: 0 1rem;
+    max-width: $max-width-desktop;
+    align-items: baseline;
 
     @media (max-width: $min-width-desktop) {
         flex-direction: column;
@@ -87,6 +93,7 @@
       font-weight: 600;
       font-size: 4rem;
       margin: 0;
+      color: $grey;
       @media (max-width: $min-width-desktop) {
         padding: 0;
       }

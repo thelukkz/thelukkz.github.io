@@ -1,6 +1,7 @@
 "use strict";
 
 // place your code below
+console.log("");
 
 const list = document.querySelector('.projects__list--js');
 
@@ -17,8 +18,10 @@ fetch("https://api.github.com/users/thelukkz/repos")
           <p class="proj-item__description">${description}</p>
         </div>
         <div class="proj-item__navi">
-          <a class="proj-item__link proj-item__link--page" href="${homepage}" target="_blank">Demo</a>
-          <a class="proj-item__link proj-item__link--repo" href="${html_url}" target="_blank">GitHub</a>
+        ${
+            homepage ? `<a class="proj-item__link proj-item__link--page" href="${homepage}" target="_blank" rel="nofollow noreferrer">Demo</a>` : ''
+        }  
+          <a class="proj-item__link proj-item__link--repo" href="${html_url}" target="_blank" rel="nofollow noreferrer">GitHub</a>
         </div>
       </li>`;
     }
