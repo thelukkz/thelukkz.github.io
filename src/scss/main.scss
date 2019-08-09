@@ -32,14 +32,6 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.main {
-  padding: 2rem 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  
-}
-
 
 
 .contact {
@@ -111,20 +103,4 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-
-
-.container--grey {
-  background: $lightgrey;
-  width: 100vh;
-  //border-left: .6rem solid $darkblue;
-  //border-right: .6rem solid $darkblue;
-  display: flex;
-  justify-content: center;
-
-
-  @media (max-width: $min-width-desktop) {
-    border: 0;
-  }
 }

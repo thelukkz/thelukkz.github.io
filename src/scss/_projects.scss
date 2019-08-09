@@ -1,45 +1,49 @@
 .projects {
-    display: flex;
-    flex-direction: column;
-    max-width: $max-width-desktop;
-    width: 100%;
     background: $lightgrey;
-    padding: 1rem;
+    padding: 8rem 0;
   
+    &__box {
+        max-width: $max-width-desktop;
+        margin: 0 auto;
+    }
+
     &__list{
-      padding: 2rem 0;
+      padding: 0 1rem;;
       margin: 0;
       list-style: none;
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-column-gap: 24px;
       grid-row-gap: 24px;
-  
+        
       @media (max-width: $min-width-desktop) {
         grid-template-columns: 1fr;
       }
     }
   
     &__item {
-      box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
-      border-radius: 8px;
-      display: flex;
-      flex-direction: column;
-      
+        background: $white;
+        box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
+        border-radius: 8px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
   
     &__title {
       font-weight: 600;
       font-size: 2rem;
-      width: 100%;
       max-width: $max-width-desktop;
+      padding: 0 1rem;
+      margin: 0 auto 1rem;
     }
   
     &__description {
       width: 50%;
       align-self: flex-start;
       font-size: 1.1rem;
-      padding: 0;
+      padding: 2rem 1rem;
       margin: 0;
   
       @media (max-width: $min-width-desktop) {
