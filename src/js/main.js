@@ -5,7 +5,7 @@ console.log("");
 
 const list = document.querySelector('.projects__list--js');
 
-fetch("https://api.github.com/users/thelukkz/repos")
+fetch("https://api.github.com/users/thelukkz/repos?sort=updated&direction=desc")
 .then(resp => resp.json())
 .then(resp => {
     const dtos = resp;
