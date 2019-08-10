@@ -1,7 +1,7 @@
 "use strict";
 
 // place your code below
-console.log("");
+console.log("Hi! no errors planned ;)");
 
 const list = document.querySelector('.projects__list--js');
 
@@ -29,7 +29,5 @@ fetch("https://api.github.com/users/thelukkz/repos?sort=updated&direction=desc")
 .catch(err => {
     console.log("Can't connect to github api.")
 })
-
-console.log(`Hello world!`);
 
 
