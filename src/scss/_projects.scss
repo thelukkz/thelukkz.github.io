@@ -72,6 +72,19 @@
     &__logo {
       width: 48px;
       height: 48px;
+
+      &--XL {
+        width: 72px;
+        height: 72px;
+      }
+
+      &--circle {
+        border-radius: 50%;
+      }
+
+      &--shadow {
+        box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
+      }
     }
   
     &__link {
