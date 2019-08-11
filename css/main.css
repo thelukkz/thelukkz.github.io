@@ -669,7 +669,8 @@ template {
   height: 48px; }
   .proj-item__logo--XL {
     width: 72px;
-    height: 72px; }
+    height: 72px;
+    background: #fff; }
   .proj-item__logo--circle {
     border-radius: 50%; }
   .proj-item__logo--shadow {
