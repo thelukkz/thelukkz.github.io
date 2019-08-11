@@ -109,7 +109,8 @@
     color: #CBD2D9; }
     @media (max-width: 780px) {
       .user__name {
-        padding: 0; } }
+        padding: 0;
+        font-size: 3rem; } }
 
 .contact {
   width: 100%;
