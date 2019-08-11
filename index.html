@@ -9,7 +9,8 @@
   <meta name="description" content="Personal site (online CV) with projects and skills list by Łukasz Bednarek." />
 
   <meta property="og:title" content="Łukasz Bednarek - online CV" />
-  <meta property="og:description" content="Personal site (online CV) with projects and skills list by Łukasz Bednarek." />
+  <meta property="og:description"
+    content="Personal site (online CV) with projects and skills list by Łukasz Bednarek." />
   <meta property="og:url" content="https://thelukkz.github.io" />
 
   <meta property="og:image" content="https://thelukkz.github.io/assets/img/cover.png" />
@@ -87,12 +88,27 @@
     </section>
     <section class="projects" id="projects">
       <h2 class="projects__title">Recent projects</h2>
-        <div class="projects__box">
+      <div class="projects__box">
         <p class="projects__description">
-          I started my fullstack developer path in 2018, earlier I was involced in the automation of test. Here's the
+          I started my fullstack developer path in 2018, earlier I was involved in the automation of test. Here's the
           list of my public repositories.
         </p>
-        <ul class="projects__list projects__list--js"></ul>
+        <ul class="projects__list projects__list--js">
+          <li class="projects__item">
+            <div class="proj-item__info">
+              <img class="proj-item__logo--XL proj-item__logo--circle proj-item__logo--shadow" src="../assets/img/logo_trooper.png" alt="Trooper logo." />
+              <img class="proj-item__logo--XL proj-item__logo--circle proj-item__logo--shadow" src="../assets/img/logo_leaware.png" alt="Leaware logo." />
+              <h4 class="proj-item__title">Trooper.be</h4>
+              <p class="proj-item__description">Trooper is a Belgian service that allows users to finance non-profit organizations through online purchasing for everyday items.</p>
+              <p class="proj-item__description">As a part of <strong>Leaware</strong> team I was responsible mostly for backend part (<strong>refactorise</strong> of old features, performance <strong>improvements</strong>, <strong>new features</strong> in admin section). </p>
+            </div>
+            <div class="proj-item__navi">
+            
+              <a class="proj-item__link proj-item__link--page" href="https://trooper.be" target="_blank"
+                rel="nofollow noreferrer">Demo</a>
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
     <footer class="footer">

@@ -667,6 +667,14 @@ template {
 .proj-item__logo {
   width: 48px;
   height: 48px; }
+  .proj-item__logo--XL {
+    width: 72px;
+    height: 72px; }
+  .proj-item__logo--circle {
+    border-radius: 50%; }
+  .proj-item__logo--shadow {
+    -webkit-box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
+            box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09); }
 
 .proj-item__link {
   color: #0593FB;
